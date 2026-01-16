@@ -2,7 +2,8 @@ import random
 
 # function to be used by game_1: Guess the Number
 def pick_value(poss_values):
-    x = random.choice(poss_values)   
+    middleVal = len(poss_values)//2   
+    x = poss_values[middleVal]
     return x
 
 # function to be used in game_3: Hangman
