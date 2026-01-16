@@ -2,6 +2,18 @@ from game_functions import check_higher_lower
 
 import random
 
+def check_higher_lower(current_val, next_val, user_input):
+    if current_val > next_val:
+        if user_input == 'l':
+            return True
+        
+        return False
+    
+    if next_val > current_val:
+        if user_input == 'h':
+            return True
+        
+        return False
 def play_game_2(min_x=0, max_x=20):
 
     print("Welcome to Game 2: 'Higher or Lower'")
